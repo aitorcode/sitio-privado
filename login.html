@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./estilos/login.css">
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="contenedor-login">
+
+            <form onsubmit="verificacion(event)">
+
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario">
+                
+                <label for="pass">Contraseña</label>
+                <input type="password" id="pass" name="pass">
+                
+                <div class="contenedor-checkbox">
+
+                    <input type="checkbox" id="terminos" name="terminos">
+                    <label for="terminos">Acepto las <a href="./condiciones.html">condiciones</a></label>
+
+                </div>
+                
+                <button type="submit">Login</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>
