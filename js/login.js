@@ -10,10 +10,10 @@ function verificacion(event) {
 
     if (usuarios[usuario] && usuarios[usuario] === pass) {
         alert("contraseña correcta")
-        window.location.href = "../dashboard.html";
+        window.location.href = "./dashboard.html";
     } else {
         alert("contraseña incorrecta")
-        window.location.href = "../index.html";
+        window.location.href = "./index.html";
     }
 
 }  
