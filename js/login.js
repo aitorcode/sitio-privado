@@ -4,19 +4,25 @@ const usuarios = {
 
 function verificacion(event) {
 
-    event.preventDefault();
-
-    const usuario = document.getElementById('usuario').value
-    const pass = document.getElementById('pass').value
-
+    const params = new URLSearchParams(location.search)
+    const usuario = params.get('usuario')
+    const pass = params.get('pass')
 
     if (usuarios[usuario] && usuarios[usuario] === pass) {
         alert("contraseña correcta")
         window.location.href = "../dashboard.html";
     } else {
         alert("contraseña incorrecta")
+        window.location.href = "../login.html";
     }
 
-}     
+}  
+
+setTimeout(verificacion, 200);
+
+/* verificacion()
+ */
+
+
 
 

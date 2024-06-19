@@ -15,7 +15,7 @@
 
         <div class="contenedor-login">
 
-            <form onsubmit="verificacion(event)">
+            <form action="auth.html" method="GET">
 
                 <label for="usuario">Usuario</label>
                 <input type="text" id="usuario" name="usuario">
@@ -25,7 +25,7 @@
                 
                 <div class="contenedor-checkbox">
 
-                    <input type="checkbox" id="terminos" name="terminos">
+                    <input required type="checkbox" id="terminos" name="terminos">
                     <label for="terminos">Acepto las <a href="./condiciones.html">condiciones</a></label>
 
                 </div>
@@ -38,6 +38,6 @@
 
     </div>
 
-    <script src="./js/login.js"></script>
 </body>
+
 </html>
