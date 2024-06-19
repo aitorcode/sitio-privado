@@ -13,7 +13,7 @@ function verificacion(event) {
         window.location.href = "../dashboard.html";
     } else {
         alert("contraseña incorrecta")
-        window.location.href = "../login.html";
+        window.location.href = "../index.html";
     }
 
 }  
